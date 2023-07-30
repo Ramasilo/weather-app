@@ -23,6 +23,13 @@ body {
         line-height: 19px;
         
       }
+      li::first-letter {
+        text-transform: capitalize;
+      }
+      
+      a {
+        text-decoration: none;
+      }
        
       .weather-border {
         
@@ -53,6 +60,3 @@ body {
         font-size: 16px;
       }
       
-      a {
-        text-decoration: none;
-      }
