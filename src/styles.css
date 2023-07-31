@@ -59,4 +59,11 @@ body {
         position: relative;
         font-size: 16px;
       }
-      
+      .weather-temperature .active {
+        cursor: default;
+        color: rgb(33, 33, 33);
+
+      }
+      .weather-temperature a {
+        color: rgb(135, 135, 135);
+      }
