@@ -34,6 +34,13 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   let dateElement = document.querySelector("#date");
   dateElement.innerHTML = formatDate(response.data.time * 1000);
+  let iconElement = document.querySelector("#icon");
+  let icons = response.data.condition.icon;
+  iconElement.setAttribute(
+    "src",
+    `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${icons}.png`
+  );
+  iconElement.setAttribute("alt", response.data.condition.description);
 }
 let apiKey = "d03b8ad06cb49fbteo54c58b346b4e3f";
 let apiUrl = `https://api.shecodes.io/weather/v1/current?query=Johannesburg&key=${apiKey}&units=metric`;
