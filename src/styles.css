@@ -64,9 +64,7 @@ body {
         color: rgb(33, 33, 33);
 
       }
-      .weather-temperature a {
-        color: rgb(135, 135, 135);
-      }
+      
        .weather-forecast {
         margin-top: 20px;
         text-align: center;
